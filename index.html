@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <blockquote cite="http://www.google.com">Ez egy ilyen kiemelt idézet blockquote taggel.</blockquote> <br>
     <p>
         Sortörés a szövegben<br> br taggel. <br> <br>
         <u>Aláhúzott betű u taggel.</u> <br>
@@ -22,10 +23,11 @@
         Felső <sup> szöveg </sup> sup taggel. <br>
         Alsó <sub> szöveg </sub> sub taggel. <br>
         <mark>Kijelölt szöveg mark taggel.</mark> <br>
-    <blockquote cite="http://www.google.com">Ez egy ilyen kiemelt idézet blockquote taggel.</blockquote> <br>
-    <del>Rossz tartalom jelölése del taggel.</del>
-    <ins>Javított tartalom jelölése ins taggel.</ins> <br>
-    <abbr title="Hypertext Markup Language">HTML</abbr> abbr taggel jelöljük a tooltipes szövegeket. <br>
+        Ma reggel <time>08:00</time>-kor keltem. <br>
+
+        <del>Rossz tartalom jelölése del taggel.</del>
+        <ins>Javított tartalom jelölése ins taggel.</ins> <br>
+        <abbr title="Hypertext Markup Language">HTML</abbr> abbr taggel jelöljük a tooltipes szövegeket. <br>
 
     <h1>Első címsor</h1>
     <h2>Második címsor</h2>
@@ -50,7 +52,7 @@
         <li>sárga</li>
     </ol>
 
-    <ul type="square">
+    <ul>
         <li>piros</li>
         <li>kék</li>
         <li>sárga</li>
@@ -76,7 +78,8 @@
     </nav>
 
     <article>
-        Article tag, fórum, blog, egyéb bejegyzésekhez.
+        <h2>Cikk címe...</h2>
+        <p>Cikk tartalma... Article tag, fórum, blog, egyéb bejegyzésekhez.</p>
     </article>
 
     <aside>
@@ -101,49 +104,50 @@
     <form method="POST">
         <fieldset>
             <legend>Űrlap címe</legend>
-            <li> <input type="text"> </li>
-            <li> <input type="email"> </li>
-            <li> <input type="password"> </li>
-            <li> <input type="file"> </li>
-            <li> <input type="number"> </li>
-            <li> <input type="submit" value="Kattints ide"> </li>
+            <input type="text"> <br>
+            <input type="email"> <br>
+            <input type="password"> <br>
 
-            <li>
-                <select>
-                    <option>piros</option>
-                    <option>kék</option>
-                    <option>sárga</option>
-                </select>
-            </li>
+            <label for="phone">Telefonszám:</label>
+            <input type="tel" id="phone"> <br>
+            <input type="file"> <br>
 
-            <li>
-                <select>
-                    <optgroup label="Olasz autók">
-                        <option>Fiat</option>
-                        <option>Alfa Romeo</option>
-                    </optgroup>
-                    <optgroup label="Német autók">
-                        <option>Audi</option>
-                        <option>Mercedes</option>
-                    </optgroup>
-               </select>
-            </li>
+            <label for="date">Dátum</label>
+            <input type="checkbox" id="date"> <br>
 
-            <li>
-                <textarea></textarea>
-            </li>
+            <label for="elso">Első</label> <input type="radio" name="valassz" id="elso">
+            <label for="masodik">Második</label> <input type="radio" name="valassz" id="masodik">
+            <label for="harmadik">Harmadik</label> <input type="radio" name="valassz" id="harmadik"> <br>
 
-            <li>
-                <progress value="30" max="100"></progress>
-            </li>
+            <input type="number"> <br>
 
+            <input type="submit" value="Kattints ide">
+            <button type="submit">Ide is kattinthatsz</button> <br>
 
+            <select>
+                <option>piros</option>
+                <option>kék</option>
+                <option>sárga</option>
+            </select> <br>
+
+            <select>
+                <optgroup label="Olasz autók">
+                    <option>Fiat</option>
+                    <option>Alfa Romeo</option>
+                </optgroup>
+                <optgroup label="Német autók">
+                    <option>Audi</option>
+                    <option>Mercedes</option>
+                </optgroup>
+            </select> <br>
+
+            <textarea></textarea> <br>
+
+            <progress value="40" max="100"></progress> <br>
+
+            <button>Gomb</button>
         </fieldset>
-
     </form>
-
-    </p>
-
 </body>
 
 </html>
