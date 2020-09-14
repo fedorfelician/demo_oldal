@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background: url('../img/bg-body.gif');
+    margin: 0;
+}
+
+div{
+    background-color: white;
+    max-width: 600px;
+    width: 90%;
+    padding: 20px;
+    margin: 40px auto;
+}

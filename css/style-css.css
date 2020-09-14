@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+
+html{
+    height: 100%;
+}
+
+body {
+    background: url('../img/bg-body.gif') green repeat center center fixed;
+    color: white;
+    font-style: italic;
+
+    font: bold 20px/27px 'Roboto';
+}
+
